@@ -4,11 +4,16 @@ var pw_str = "123";
 var inp_id;
 var inp_pw;
 var id_form;
+var cl;
 
+var now = new Date();
+//document.write(now.getFullYear()+"년 "+(now.getMonth()+1)+"월 "+now.getDate()+"일 "+now.getHours()+"시 "+now.getMinutes()+"분 "+now.getSeconds()+"초 "+now.getMilliseconds()+"밀리초");
 window.onload = function(){
     inp_id = document.getElementById("id")
     inp_pw = document.getElementById("pw")
     id_form = document.getElementById("login_form")
+    cl = document.getElementById("clock")
+    cl.innerHTML=now.getFullYear()+'년 '+(now.getMonth()+1)+'월 '+now.getDate()+'일 '+now.getHours()+'시 '+now.getMinutes()+'분 '+now.getSeconds()+'초 '+now.getMilliseconds()+'밀리초'
     //id_str = inp_id.value;
     //pw_str = inp_pw.value;
 }
